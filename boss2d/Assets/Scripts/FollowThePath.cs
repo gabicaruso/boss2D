@@ -38,4 +38,20 @@ public class FollowThePath : MonoBehaviour
             }
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.gameObject.CompareTag("minigame1"))
+        {
+            Debug.Log("minigame1");
+        }
+        if(col.gameObject.CompareTag("minigame2"))
+        {
+            Debug.Log("minigame2");
+        }
+        if(col.gameObject.CompareTag("minigame3"))
+        {
+            Debug.Log("minigame3");
+        }
+    }
 }

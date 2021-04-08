@@ -4,6 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - bun
+  - burger
+  - bottonBun
+  - GameOver
+  - egg
+  - tomato
   - minigame
   - minigame1
   - minigame2

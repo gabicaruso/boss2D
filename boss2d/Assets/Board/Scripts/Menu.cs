@@ -7,6 +7,7 @@ public class Menu : MonoBehaviour
 {
     public void Game()
     {
+        GameControl.gameOver = false;
         SceneManager.LoadScene("SampleScene");
     }
 }

@@ -45,22 +45,7 @@ public class GameControl : MonoBehaviour
 
         if (player1.GetComponent<FollowThePath>().waypointIndex == player1.GetComponent<FollowThePath>().waypoints.Length)
         {
-            if (PlayerPrefs.HasKey("waypointIndex"))
-            {
-                PlayerPrefs.GetInt("waypointIndex");
-            }
-            if (PlayerPrefs.HasKey("mini1"))
-            {
-                PlayerPrefs.GetInt("mini1");
-            }
-            if (PlayerPrefs.HasKey("mini2"))
-            {
-                PlayerPrefs.GetInt("mini2");
-            }
-            if (PlayerPrefs.HasKey("mini3"))
-            {
-                PlayerPrefs.GetInt("mini3");
-            }
+            PlayerPrefs.DeleteAll();
             gameOver = true;
             SceneManager.LoadScene("EndGame");
         }

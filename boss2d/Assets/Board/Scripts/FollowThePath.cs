@@ -50,8 +50,8 @@ public class FollowThePath : MonoBehaviour
 
             if (transform.position == waypoints[waypointIndex].transform.position)
             {
-                waypointIndex++;
                 PlayerPrefs.SetInt("waypointIndex", waypointIndex);
+                waypointIndex++;
             } 
         }
     }
@@ -60,20 +60,16 @@ public class FollowThePath : MonoBehaviour
     {
         if(col.gameObject.CompareTag("minigame1") && mini1 == 0)
         {
-            Debug.Log("minigame1");
             animator.SetBool("minigame", true);
             PlayerPrefs.SetInt("mini1", 1);
-
         }
         if(col.gameObject.CompareTag("minigame2") && mini2 == 0)
         {
-            Debug.Log("minigame2");
             animator.SetBool("minigame", true);
             PlayerPrefs.SetInt("mini2", 1);
         }
         if(col.gameObject.CompareTag("minigame3") && mini3 == 0)
         {
-            Debug.Log("minigame3");
             animator.SetBool("minigame", true);
             PlayerPrefs.SetInt("mini3", 1);
         }

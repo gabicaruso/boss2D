@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - bun
+  - burger
+  - bottonBun
+  - GameOver
+  - egg
+  - tomato
   layers:
   - Default
   - TransparentFX

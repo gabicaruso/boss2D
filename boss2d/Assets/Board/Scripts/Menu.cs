@@ -9,6 +9,8 @@ public class Menu : MonoBehaviour
     {
         GameControl.diceSideThrown = 0;
         GameControl.player1StartWaypoint = 0;
+        GameControl.vidas = 3;
+        GameControl.pontos = 0;
         GameControl.gameOver = false;
         Dice.coroutineAllowed = true;
         SceneManager.LoadScene("SampleScene");

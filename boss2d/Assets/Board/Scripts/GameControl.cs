@@ -12,6 +12,9 @@ public class GameControl : MonoBehaviour
 
     public static bool gameOver = false;
 
+    public static int vidas = 3;
+    public static int pontos = 0;
+
     void Start()
     {
         player1 = GameObject.Find("Player1");
@@ -41,6 +44,13 @@ public class GameControl : MonoBehaviour
                 PlayerPrefs.SetInt("mini3", 2);
                 SceneManager.LoadScene("MinigameTest");
             }
+        }
+
+        if (vidas <= 0)
+        {
+            PlayerPrefs.DeleteAll();
+            gameOver = true;
+            SceneManager.LoadScene("Lost");
         }
 
         if (player1.GetComponent<FollowThePath>().waypointIndex == player1.GetComponent<FollowThePath>().waypoints.Length)

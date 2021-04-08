@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -11,26 +12,21 @@ public class GameController : MonoBehaviour
     
     private int moveCount;
 
-    // Start is called before the first frame update
-    
     void Awake(){
         if(instance == null){
             instance = this;
         }
-
     }
-    // Start is called before the first frame update
+
     void Start()
     {
       dropIng.SpawnIngredients(); 
       Debug.Log("start");
     }
 
-    // Update is called once per frame
     void Update()
     {
         DetectInput();
-        
     }
 
     void DetectInput(){
@@ -41,7 +37,6 @@ public class GameController : MonoBehaviour
 
     public void SpawnNewIngredient(){
         Invoke("NewIngredient",1f);
-
     }
 
     void NewIngredient(){
@@ -49,7 +44,12 @@ public class GameController : MonoBehaviour
     }
 
     public void EndGame(){
-        //UnityEngine.SceneManagement.SceneManager.LoadScene();
-        Debug.Log("endgame");
+        SceneManager.LoadScene("PerdeuMini1");
+        Debug.Log("perdeu");
+    }
+
+    public void Winner(){
+        SceneManager.LoadScene("VenceuMini1");
+        Debug.Log("ganhou");
     }
 }

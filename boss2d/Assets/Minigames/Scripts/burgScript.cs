@@ -6,14 +6,13 @@ public class burgScript : MonoBehaviour
 {
     private float min_X = -4.5f, max_F = 4.5f;
     private bool canMove;
-    private float moveSpeed = 15f;
+    private float moveSpeed = 12f;
     private Rigidbody2D myBody;
     private bool gameOver;
     private bool ignoreCollision;
     private bool ignoreTrigger ;
 
     public int ingCount = 0;
-    // Start is called before the first frame update
     
     void Awake(){
         myBody = GetComponent<Rigidbody2D>();
@@ -23,7 +22,6 @@ public class burgScript : MonoBehaviour
 
     void Start()
     {
-       
        canMove = true; 
        if(Random.Range(0,2) > 0){
            moveSpeed *= -1f;
@@ -31,7 +29,6 @@ public class burgScript : MonoBehaviour
        GameController.instance.currentIng = this;
     }
 
-    // Update is called once per frame
     void Update()
     {
         MoveBox();
@@ -52,7 +49,6 @@ public class burgScript : MonoBehaviour
     public void DropIng(){
         canMove = false;
         myBody.gravityScale = Random.Range(2,4);
-
     }
 
     void Landed(){
@@ -63,7 +59,6 @@ public class burgScript : MonoBehaviour
         ignoreTrigger = true;
 
         GameController.instance.SpawnNewIngredient();
-        
     }
 
     void EndGame(){
@@ -77,13 +72,11 @@ public class burgScript : MonoBehaviour
         if(target.gameObject.tag == "bottonBun"){
             Invoke("Landed",2f);
             ignoreCollision = true;
-
         }
 
         if(target.gameObject.tag == "burger"){
             Invoke("Landed",2f);
             ignoreCollision = true;
-            
         }
 
         if(target.gameObject.tag == "tomato"){
@@ -102,9 +95,7 @@ public class burgScript : MonoBehaviour
             gameOver = true;
             ignoreTrigger = true;
             Invoke("EndGame",2f);
-
         }
-
 
     }
 }

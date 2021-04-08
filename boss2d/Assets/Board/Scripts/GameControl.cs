@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
@@ -24,12 +25,29 @@ public class GameControl : MonoBehaviour
         {
             player1.GetComponent<FollowThePath>().moveAllowed = false;
             player1StartWaypoint = player1.GetComponent<FollowThePath>().waypointIndex - 1;
+
+            if (PlayerPrefs.GetInt("mini1") ==  1)
+            {
+                PlayerPrefs.SetInt("mini1", 2);
+                SceneManager.LoadScene("MinigameTest");
+            }
+            if (PlayerPrefs.GetInt("mini2") ==  1)
+            {
+                PlayerPrefs.SetInt("mini2", 2);
+                SceneManager.LoadScene("MinigameTest");
+            }
+            if (PlayerPrefs.GetInt("mini3") ==  1)
+            {
+                PlayerPrefs.SetInt("mini3", 2);
+                SceneManager.LoadScene("MinigameTest");
+            }
         }
 
         if (player1.GetComponent<FollowThePath>().waypointIndex == player1.GetComponent<FollowThePath>().waypoints.Length)
         {
-            Debug.Log("Ganhou!");
+            PlayerPrefs.DeleteAll();
             gameOver = true;
+            SceneManager.LoadScene("EndGame");
         }
     }
 

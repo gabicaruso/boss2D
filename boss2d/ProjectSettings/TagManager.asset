@@ -10,6 +10,11 @@ TagManager:
   - GameOver
   - egg
   - tomato
+  - minigame
+  - minigame1
+  - minigame2
+  - minigame3
+  - winner
   layers:
   - Default
   - TransparentFX

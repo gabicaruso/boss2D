@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - minigame
+  - minigame1
+  - minigame2
+  - minigame3
+  - winner
   layers:
   - Default
   - TransparentFX

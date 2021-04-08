@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
@@ -28,7 +29,7 @@ public class GameControl : MonoBehaviour
 
         if (player1.GetComponent<FollowThePath>().waypointIndex == player1.GetComponent<FollowThePath>().waypoints.Length)
         {
-            Debug.Log("Ganhou!");
+            SceneManager.LoadScene("EndGame");
             gameOver = true;
         }
     }

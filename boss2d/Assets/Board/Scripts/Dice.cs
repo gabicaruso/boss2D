@@ -6,7 +6,6 @@ public class Dice : MonoBehaviour
 {
     private Sprite[] diceSides;
     private SpriteRenderer rend;
-    // private int whosTurn = 1;
     private bool coroutineAllowed = true;
 
     private void Start()
@@ -37,14 +36,6 @@ public class Dice : MonoBehaviour
 
         GameControl.diceSideThrown = randomDiceSide + 1;
         GameControl.MovePlayer();
-        // if (whosTurn == 1)
-        // {
-        //     GameControl.MovePlayer(1);
-        // } else if (whosTurn)
-        // {
-        //     GameControl.MovePlayer(2);
-        // }
-        // whosTurn *= -1;
         coroutineAllowed = true;
     }
 }

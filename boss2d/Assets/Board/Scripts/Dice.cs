@@ -6,7 +6,7 @@ public class Dice : MonoBehaviour
 {
     private Sprite[] diceSides;
     private SpriteRenderer rend;
-    private bool coroutineAllowed = true;
+    public static bool coroutineAllowed = true;
 
     private void Start()
     {

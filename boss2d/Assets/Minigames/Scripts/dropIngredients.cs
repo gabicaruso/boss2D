@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class dropIngredients : MonoBehaviour
 {
-    // Start is called before the first frame update
+
     public List<GameObject> ingredients = new List<GameObject>();
     public GameObject bun,burg,tomato;
     private Vector2 screenbounds;
 
     public static GameController gm;
 
-
-
-    
     void Awake()
     {
         ingredients.Add(burg);
@@ -21,8 +18,8 @@ public class dropIngredients : MonoBehaviour
         ingredients.Add(bun);
     }
 
-    void EndGame(){
-        GameController.instance.EndGame();
+    void Winner(){
+        GameController.instance.Winner();
     }
 
     public void SpawnIngredients(){
@@ -34,18 +31,10 @@ public class dropIngredients : MonoBehaviour
         temp.z = 0f;
         obj.transform.position = temp;
         ingredients.RemoveAt(0);
-
         
         if(ingredients.Count == 0){
-            Invoke("EndGame",2f);
-
+            Invoke("Winner",2f);
         }
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
 
     }
 }

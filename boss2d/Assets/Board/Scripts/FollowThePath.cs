@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// using UnityEngine.SceneManagement;
 
 public class FollowThePath : MonoBehaviour
 {
@@ -48,20 +49,22 @@ public class FollowThePath : MonoBehaviour
         {
             Debug.Log("minigame1");
             animator.SetBool("minigame", true);
+            // SceneManager.LoadScene("MinigameTest");
         }
         if(col.gameObject.CompareTag("minigame2"))
         {
             Debug.Log("minigame2");
             animator.SetBool("minigame", false);
+            // SceneManager.LoadScene("MinigameTest");
         }
         if(col.gameObject.CompareTag("minigame3"))
         {
             Debug.Log("minigame3");
             animator.SetBool("minigame", true);
+            // SceneManager.LoadScene("MinigameTest");
         }
         if(col.gameObject.CompareTag("winner"))
         {
-            Debug.Log("winner");
             animator.SetBool("minigame", false);
         }
     }

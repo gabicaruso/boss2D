@@ -34,6 +34,7 @@ public class Dice : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
         }
 
+        // GameControl.diceSideThrown = 5*(randomDiceSide + 1);
         GameControl.diceSideThrown = randomDiceSide + 1;
         GameControl.MovePlayer();
         coroutineAllowed = true;

@@ -70,17 +70,17 @@ public class burgScript : MonoBehaviour
             return;
         }
         if(target.gameObject.tag == "bottonBun"){
-            Invoke("Landed",2f);
+            Invoke("Landed",0.5f);
             ignoreCollision = true;
         }
 
         if(target.gameObject.tag == "burger"){
-            Invoke("Landed",2f);
+            Invoke("Landed",0.5f);
             ignoreCollision = true;
         }
 
         if(target.gameObject.tag == "tomato"){
-            //Invoke("Landed",2f);
+            // Invoke("Landed",2f);
             ignoreCollision = true;
         }
 

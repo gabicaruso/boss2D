@@ -14,9 +14,12 @@ public class FollowThePath : MonoBehaviour
 
     public bool moveAllowed = false;
 
+    Animator animator;
+
     void Start()
     {
         transform.position = waypoints[waypointIndex].transform.position;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -44,14 +47,22 @@ public class FollowThePath : MonoBehaviour
         if(col.gameObject.CompareTag("minigame1"))
         {
             Debug.Log("minigame1");
+            animator.SetBool("minigame", true);
         }
         if(col.gameObject.CompareTag("minigame2"))
         {
             Debug.Log("minigame2");
+            animator.SetBool("minigame", false);
         }
         if(col.gameObject.CompareTag("minigame3"))
         {
             Debug.Log("minigame3");
+            animator.SetBool("minigame", true);
+        }
+        if(col.gameObject.CompareTag("winner"))
+        {
+            Debug.Log("winner");
+            animator.SetBool("minigame", false);
         }
     }
 }

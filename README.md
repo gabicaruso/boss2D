@@ -5,4 +5,5 @@ Repositório para o quarto projeto da disciplina Jogos Digitais do Insper.
 ### Link para jogar: https://gabicaruso.itch.io/insper-party
 
 Referências:
-  - https://www.youtube.com/watch?v=W8ielU8iURI.
+  - https://www.youtube.com/watch?v=W8ielU8iURI;
+  - https://www.youtube.com/watch?v=4QP0ZTPUaI4

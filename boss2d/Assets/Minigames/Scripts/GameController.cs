@@ -48,7 +48,7 @@ public class GameController : MonoBehaviour
     }
 
     public void Winner(){
-        GameControl.pontos += 100;
+        GameControl.pontos += 10;
         SceneManager.LoadScene("VenceuMini1");
     }
 }

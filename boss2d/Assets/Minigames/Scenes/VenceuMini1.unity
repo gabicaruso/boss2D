@@ -381,7 +381,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Parab\xE9ns! Ganhou x Pontos!"
+  m_Text: "Parab\xE9ns! Tirou 10 na prova!"
 --- !u!222 &982798430
 CanvasRenderer:
   m_ObjectHideFlags: 0

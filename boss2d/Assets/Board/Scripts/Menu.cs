@@ -7,6 +7,7 @@ public class Menu : MonoBehaviour
 {
     public void Game()
     {
+        PlayerPrefs.DeleteAll();
         GameControl.diceSideThrown = 0;
         GameControl.player1StartWaypoint = 0;
         GameControl.vidas = 3;

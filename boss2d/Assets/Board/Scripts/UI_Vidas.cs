@@ -6,16 +6,14 @@ using UnityEngine.UI;
 public class UI_Vidas : MonoBehaviour
 {
     Text textComp;
-    // GameManager gm;
+
     void Start()
     {
         textComp = GetComponent<Text>();
-        // gm = GameManager.GetInstance();
     }
     
     void Update()
     {
-        // textComp.text = $"Vidas: {gm.vidas}";
-        textComp.text = "Vidas: 0";
+        textComp.text = $"Vidas: {GameControl.vidas}";
     }
 }

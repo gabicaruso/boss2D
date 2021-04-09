@@ -37,12 +37,12 @@ public class GameControl : MonoBehaviour
             if (PlayerPrefs.GetInt("mini2") ==  1)
             {
                 PlayerPrefs.SetInt("mini2", 2);
-                SceneManager.LoadScene("MinigameTest");
+                SceneManager.LoadScene("Init1");
             }
             if (PlayerPrefs.GetInt("mini3") ==  1)
             {
                 PlayerPrefs.SetInt("mini3", 2);
-                SceneManager.LoadScene("MinigameTest");
+                SceneManager.LoadScene("Init1");
             }
         }
 
@@ -55,7 +55,6 @@ public class GameControl : MonoBehaviour
 
         if (player1.GetComponent<FollowThePath>().waypointIndex == player1.GetComponent<FollowThePath>().waypoints.Length)
         {
-            // PlayerPrefs.DeleteAll();
             gameOver = true;
             SceneManager.LoadScene("EndGame");
         }

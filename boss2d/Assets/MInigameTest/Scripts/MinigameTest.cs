@@ -7,6 +7,11 @@ public class MinigameTest : MonoBehaviour
 {
     public void Voltar()
     {
-        SceneManager.LoadScene("SampleScene");
+        if(GameControl.vidas > 0){
+            SceneManager.LoadScene("SampleScene");
+        }
+        else if(GameControl.vidas <= 0){
+            SceneManager.LoadScene("Lost");
+        }
     }
 }

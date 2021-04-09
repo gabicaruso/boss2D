@@ -37,10 +37,10 @@ public class burgScript : MonoBehaviour
     
             temp.x += moveSpeed * Time.deltaTime;
             if(temp.x > max_F){
-                moveSpeed = -12.0f;
+                moveSpeed = -15.0f;
             }
             else if(temp.x < min_X){
-                moveSpeed = 12.0f;
+                moveSpeed = 15.0f;
             }
             transform.position = temp;
         }

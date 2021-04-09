@@ -55,7 +55,7 @@ public class GameControl : MonoBehaviour
 
         if (player1.GetComponent<FollowThePath>().waypointIndex == player1.GetComponent<FollowThePath>().waypoints.Length)
         {
-            PlayerPrefs.DeleteAll();
+            // PlayerPrefs.DeleteAll();
             gameOver = true;
             SceneManager.LoadScene("EndGame");
         }

@@ -44,11 +44,13 @@ public class GameController : MonoBehaviour
     }
 
     public void EndGame(){
+        GameControl.vidas--;
         SceneManager.LoadScene("PerdeuMini1");
         Debug.Log("perdeu");
     }
 
     public void Winner(){
+        GameControl.pontos += 100;
         SceneManager.LoadScene("VenceuMini1");
         Debug.Log("ganhou");
     }

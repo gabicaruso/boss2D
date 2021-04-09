@@ -20,8 +20,7 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-      dropIng.SpawnIngredients(); 
-      Debug.Log("start");
+      dropIng.SpawnIngredients();
     }
 
     void Update()
@@ -46,12 +45,10 @@ public class GameController : MonoBehaviour
     public void EndGame(){
         GameControl.vidas--;
         SceneManager.LoadScene("PerdeuMini1");
-        Debug.Log("perdeu");
     }
 
     public void Winner(){
         GameControl.pontos += 100;
         SceneManager.LoadScene("VenceuMini1");
-        Debug.Log("ganhou");
     }
 }

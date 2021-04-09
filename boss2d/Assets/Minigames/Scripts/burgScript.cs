@@ -8,16 +8,14 @@ public class burgScript : MonoBehaviour
     private bool canMove;
     private float moveSpeed = 12f;
     private Rigidbody2D myBody;
-    private bool gameOver;
+    public static bool gameOver;
     private bool ignoreCollision;
-    private bool ignoreTrigger ;
 
     public int ingCount = 0;
     
     void Awake(){
         myBody = GetComponent<Rigidbody2D>();
         myBody.gravityScale = 0f;
-        //Debug.Log(myBody.gravityScale);
     }
 
     void Start()
@@ -36,12 +34,13 @@ public class burgScript : MonoBehaviour
     void MoveBox(){
         if(canMove){
             Vector3 temp = transform.position;
+    
             temp.x += moveSpeed * Time.deltaTime;
             if(temp.x > max_F){
-                moveSpeed *= -1f;
+                moveSpeed = -12.0f;
             }
             else if(temp.x < min_X){
-                moveSpeed *= -1f;
+                moveSpeed = 12.0f;
             }
             transform.position = temp;
         }
@@ -56,13 +55,8 @@ public class burgScript : MonoBehaviour
             return;
         }
         ignoreCollision = true;
-        ignoreTrigger = true;
 
         GameController.instance.SpawnNewIngredient();
-    }
-
-    void EndGame(){
-        GameController.instance.EndGame();
     }
 
     void OnCollisionEnter2D(Collision2D target){
@@ -78,24 +72,5 @@ public class burgScript : MonoBehaviour
             Invoke("Landed",0.5f);
             ignoreCollision = true;
         }
-
-        if(target.gameObject.tag == "tomato"){
-            // Invoke("Landed",2f);
-            ignoreCollision = true;
-        }
-
-    }
-
-    void OnTriggerEnter2D(Collider2D target){
-        if(ignoreTrigger){
-            return;
-        }
-        if(target.tag == "GameOver"){
-            CancelInvoke("Landed");
-            gameOver = true;
-            ignoreTrigger = true;
-            Invoke("EndGame",2f);
-        }
-
     }
 }

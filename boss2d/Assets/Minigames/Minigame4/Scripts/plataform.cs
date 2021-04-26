@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class plataform : MonoBehaviour
 {
-
     public float jumpForce = 10f;
 
 	void OnCollisionEnter2D(Collision2D collision)
@@ -18,5 +17,4 @@ public class plataform : MonoBehaviour
 			}
 		}
 	}
-
 }

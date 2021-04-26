@@ -232,7 +232,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 379110797}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a08e3bb91f7f4cc1877790d3eaf2680, type: 3}
+  m_Script: {fileID: 11500000, guid: e436b9eafbf95324581a81e10fbec707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &404414872
@@ -656,7 +656,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pegue a quantidade de livros necessarios para ir bem na prova!
+  m_Text: Estude para as PIs!
 --- !u!222 &1204796970
 CanvasRenderer:
   m_ObjectHideFlags: 0

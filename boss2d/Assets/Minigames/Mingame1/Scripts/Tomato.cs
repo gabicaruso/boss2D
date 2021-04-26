@@ -6,7 +6,7 @@ public class Tomato : MonoBehaviour
 {
     void OnCollisionEnter2D(Collision2D target){
         if(target.gameObject.tag == "bun"){
-            if (transform.position.x - 0.5f < target.transform.position.x && transform.position.x + 0.5f > target.transform.position.x) {
+            if (transform.position.x - 0.8f < target.transform.position.x && transform.position.x + 0.8f > target.transform.position.x) {
                 GameController.instance.Winner();
             }
         }

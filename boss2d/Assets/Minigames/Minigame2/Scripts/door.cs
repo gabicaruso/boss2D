@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class door : MonoBehaviour
 {
-
     GameController2 gc;
-     void OnTriggerEnter2D(Collider2D col)
+
+    void OnCollisionEnter2D(Collision2D col)
     {
         GameController2.instance.Winner();
-        
     }
 }

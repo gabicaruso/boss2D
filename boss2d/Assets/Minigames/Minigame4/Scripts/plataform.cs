@@ -14,7 +14,7 @@ public class plataform : MonoBehaviour
 			Rigidbody2D rb = collision.collider.GetComponent<Rigidbody2D>();
 			if (rb != null)
 			{
-                rb.AddForce(Vector3.up * 600f);
+                rb.AddForce(Vector3.up * 570f);
 			}
 		}
 	}

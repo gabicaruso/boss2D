@@ -15,6 +15,8 @@ TagManager:
   - minigame2
   - minigame3
   - winner
+  - minigame4
+  - bonus
   layers:
   - Default
   - TransparentFX

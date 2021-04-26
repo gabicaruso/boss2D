@@ -20,6 +20,7 @@ public class FollowThePath : MonoBehaviour
     private int mini1 = 0;
     private int mini2 = 0;
     private int mini3 = 0;
+    private int mini4 = 0;
 
     void Start()
     {
@@ -30,6 +31,7 @@ public class FollowThePath : MonoBehaviour
         mini1 = PlayerPrefs.GetInt("mini1");
         mini2 = PlayerPrefs.GetInt("mini2");
         mini3 = PlayerPrefs.GetInt("mini3");
+        mini3 = PlayerPrefs.GetInt("mini4");
 
         transform.position = waypoints[waypointIndex].transform.position;
         animator = GetComponent<Animator>();
@@ -72,6 +74,11 @@ public class FollowThePath : MonoBehaviour
         {
             animator.SetBool("minigame", true);
             PlayerPrefs.SetInt("mini3", 1);
+        }
+        if(col.gameObject.CompareTag("minigame4") && mini3 == 0)
+        {
+            animator.SetBool("minigame", true);
+            PlayerPrefs.SetInt("mini4", 1);
         }
     }
 }

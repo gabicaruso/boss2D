@@ -37,7 +37,7 @@ public class GameControl : MonoBehaviour
             if (PlayerPrefs.GetInt("mini2") ==  1)
             {
                 PlayerPrefs.SetInt("mini2", 2);
-                SceneManager.LoadScene("Init1");
+                SceneManager.LoadScene("Init2");
             }
             if (PlayerPrefs.GetInt("mini3") ==  1)
             {

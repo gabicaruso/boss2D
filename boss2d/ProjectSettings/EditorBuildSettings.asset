@@ -44,4 +44,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Minigames/Minigame2/Scenes/VenceuMini2.unity
     guid: 7b0c6e4329034bb4a96481567a28406c
+  - enabled: 1
+    path: Assets/Minigames/Minigame4/Scenes/Init4.unity
+    guid: 427af0df5e3a21c45a80a8c17edd5f08
+  - enabled: 1
+    path: Assets/Minigames/Minigame4/Scenes/Minigame4.unity
+    guid: c44215926fa44254da1ed4d2cfb0547a
+  - enabled: 1
+    path: Assets/Minigames/Minigame4/Scenes/PerdeuMini4.unity
+    guid: 55414a4bf5773524b933fd5b883675dc
+  - enabled: 1
+    path: Assets/Minigames/Minigame4/Scenes/VenceuMini4.unity
+    guid: 9a6aeb05c0a21e445a51ab01dfdcd295
   m_configObjects: {}

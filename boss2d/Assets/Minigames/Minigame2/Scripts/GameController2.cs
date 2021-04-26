@@ -9,7 +9,6 @@ public class GameController2 : MonoBehaviour
     public static GameController2 instance;
     public float startTime = 5.0f;
     private float timer;
-    //public static GameController2 instance;
     public Text timerText;
 
     private int iTime;
@@ -33,7 +32,6 @@ public class GameController2 : MonoBehaviour
         else{
             EndGame();
         }
-     
     }
 
     void Timer(){
@@ -43,12 +41,12 @@ public class GameController2 : MonoBehaviour
     }
 
     public void EndGame(){
-        //GameControl.vidas--;
+        GameControl.vidas--;
         SceneManager.LoadScene("PerdeuMini2");
     }
 
     public void Winner(){
-       // GameControl.pontos += 10;
+        GameControl.pontos += 10;
         SceneManager.LoadScene("VenceuMini2");
     }
 }

@@ -5,14 +5,12 @@ using UnityEngine;
 public class key : MonoBehaviour
 {
     public GameObject door;
-    // Start is called before the first frame update
-   void OnTriggerEnter2D(Collider2D col)
+    
+    void OnCollisionEnter2D(Collision2D col)
     {
-        if(col.gameObject.CompareTag("Player"))
-        {
+        if(col.gameObject.tag == "Player"){
             door.SetActive(false);
             Destroy(this.gameObject);
         }
-        
     }
 }

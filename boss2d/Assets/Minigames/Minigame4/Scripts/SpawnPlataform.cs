@@ -19,7 +19,6 @@ public class SpawnPlataform : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.gameObject.name.StartsWith("plataform")){
-
             if(Random.Range(1,5) == 1){
                 Destroy(collision.gameObject);
                 Vector2 spawnPosition = new Vector2(Random.Range(-6f,6f),player.transform.position.y + (14 + Random.Range(0.5f,1f)));
@@ -35,7 +34,6 @@ public class SpawnPlataform : MonoBehaviour
         if(collision.gameObject.name.StartsWith("book")){
             points += 1;
             scoreText.text = "Score:" + points.ToString();
-
         }
     }
 

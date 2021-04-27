@@ -232,7 +232,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 379110797}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e436b9eafbf95324581a81e10fbec707, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a08e3bb91f7f4cc1877790d3eaf2680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &404414872
@@ -382,7 +382,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mova o player com as setas.
+  m_Text: Utilize o mouse para selecionar um item.
 --- !u!222 &709931305
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -622,7 +622,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 50}
-  m_SizeDelta: {x: 1000, y: 200}
+  m_SizeDelta: {x: 1200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1204796969
 MonoBehaviour:
@@ -656,7 +656,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Estude para as PIs!
+  m_Text: Prova delta! Chance de evitar a DP!
 --- !u!222 &1204796970
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -701,7 +701,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.18431371, g: 0.28569674, b: 0.39607844, a: 0}
+  m_BackGroundColor: {r: 0.8773585, g: 0.6419545, b: 0.062077243, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

@@ -31,7 +31,7 @@ public class FollowThePath : MonoBehaviour
         mini1 = PlayerPrefs.GetInt("mini1");
         mini2 = PlayerPrefs.GetInt("mini2");
         mini3 = PlayerPrefs.GetInt("mini3");
-        mini3 = PlayerPrefs.GetInt("mini4");
+        mini4 = PlayerPrefs.GetInt("mini4");
 
         transform.position = waypoints[waypointIndex].transform.position;
         animator = GetComponent<Animator>();

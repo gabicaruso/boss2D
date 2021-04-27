@@ -16,12 +16,14 @@ public class items : MonoBehaviour
             Debug.Log(points);
             Destroy(gameObject);  
             if(points == 5){
+                GameControl.pontos += 10;
                 SceneManager.LoadScene("VenceuMini3");
             }
             
         }
 
         if(collision.gameObject.tag == "chao"){
+            GameControl.vidas--;
             SceneManager.LoadScene("PerdeuMini3");
         }
 

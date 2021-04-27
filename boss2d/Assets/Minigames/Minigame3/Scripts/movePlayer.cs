@@ -7,13 +7,7 @@ public class movePlayer : MonoBehaviour
 {
     public float velocidade = 5.0f;
     private Rigidbody2D myBody;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
         transform.position += new Vector3(Input.GetAxis("Horizontal"),0,0) * Time.deltaTime * velocidade;
@@ -21,6 +15,7 @@ public class movePlayer : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision){
         if(collision.gameObject.tag == "baditem"){
+            GameControl.vidas--;
             SceneManager.LoadScene("PerdeuMini3");
             Destroy(collision.gameObject);  
         }

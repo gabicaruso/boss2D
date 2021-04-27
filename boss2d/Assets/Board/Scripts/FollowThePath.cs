@@ -75,7 +75,7 @@ public class FollowThePath : MonoBehaviour
             animator.SetBool("minigame", true);
             PlayerPrefs.SetInt("mini3", 1);
         }
-        if(col.gameObject.CompareTag("minigame4") && mini3 == 0)
+        if(col.gameObject.CompareTag("minigame4") && mini4 == 0)
         {
             animator.SetBool("minigame", true);
             PlayerPrefs.SetInt("mini4", 1);

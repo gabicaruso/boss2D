@@ -382,7 +382,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Aperte a barra de espa\xE7os para soltar os ingredientes."
+  m_Text: Mova o player para a esquerda e direita com as setas.
 --- !u!222 &709931305
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -656,7 +656,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Monte um sanduiche!
+  m_Text: Pegue todos os livros! Cuidado com os triangulos.
 --- !u!222 &1204796970
 CanvasRenderer:
   m_ObjectHideFlags: 0

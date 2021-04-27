@@ -6,6 +6,6 @@ public class Init3 : MonoBehaviour
 {
     public void Init()
     {
-        SceneManager.LoadScene("Minigame1");
+        SceneManager.LoadScene("Minigame3");
     }
 }
